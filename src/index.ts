@@ -35,3 +35,37 @@ export function getDistanceBetweenTwoPoints(
 
   return dist;
 }
+
+export function getTotalDistance(coordinates: Coordinate[]) {
+  coordinates = coordinates.filter((cord) => {
+    if (cord.lat && cord.lon) {
+      return true;
+    }
+  });
+
+  let totalDistance = 0;
+
+  if (!coordinates) {
+    return 0;
+  }
+
+  if (coordinates.length < 2) {
+    return 0;
+  }
+
+  for (let i = 0; i < coordinates.length - 2; i++) {
+    if (
+      !coordinates[i].lon ||
+      !coordinates[i].lat ||
+      !coordinates[i + 1].lon ||
+      !coordinates[i + 1].lat
+    ) {
+      totalDistance = totalDistance;
+    }
+    totalDistance =
+      totalDistance +
+      getDistanceBetweenTwoPoints(coordinates[i], coordinates[i + 1]);
+  }
+
+  return totalDistance.toFixed(2);
+}
