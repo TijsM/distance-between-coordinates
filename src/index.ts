@@ -39,7 +39,7 @@ export function getDistanceBetweenTwoPoints(
   return dist;
 }
 
-export function getTotalDistance(coordinates: Coordinate[], unit: Unit) {
+export function getTotalDistance(coordinates: Coordinate[], unit: Unit = 'km') {
   coordinates = coordinates.filter((cord) => {
     if (cord.lat && cord.lon) {
       return true;

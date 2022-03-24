@@ -8,12 +8,30 @@
 ### getDistanceBetweenTwoPoints
 
 ```
-const distanceSinceLastCord = getDistanceBetweenTwoPoints(
-    coordinate1,
-    coordinate2,
-);
+function getDistanceBetweenTwoPoints(
+  cord1: Coordinate,
+  cord2: Coordinate,
+  unit: Unit = 'km',
+): number
 ```
 
 ### getTotalDistance
 
-todo
+```
+export function getTotalDistance(
+  coordinates: Coordinate[],
+  unit: Unit = "km"
+): number
+```
+
+## Types
+
+```
+type Coordinate = {
+  lat: number;
+  lon: number;
+};
+
+type Unit = 'km' | 'mile';
+
+```
