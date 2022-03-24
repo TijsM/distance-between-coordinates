@@ -1,6 +1,6 @@
 {
   "name": "calculate-distance-between-coordinates",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "repository": "https://github.com/TijsM/distance-between-coordinates",
   "description": "Calculate the distance between coordinates",
   "main": "lib/index.js",
