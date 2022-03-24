@@ -3,6 +3,20 @@
 - get the distance between two points
 - get the distance between a list of points
 
+## Installation
+
+### NPM
+
+```
+npm install calculate-distance-between-coordinates
+```
+
+### Yarn
+
+```
+yarn add calculate-distance-between-coordinates
+```
+
 ## Methods
 
 ### getDistanceBetweenTwoPoints
