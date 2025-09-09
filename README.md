@@ -52,4 +52,4 @@ type Unit = 'km' | 'mile';
 
 ---
 
-Made with ❤️ by [Rodi Digital](https://rodi-digital.com) - Professional web development services
+Made with ❤️ by [Rodi Digital](https://rodi-digital.com) - Apps, AI, and Websites
