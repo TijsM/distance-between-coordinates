@@ -1,6 +1,6 @@
 {
   "name": "calculate-distance-between-coordinates",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "repository": "https://github.com/TijsM/distance-between-coordinates",
   "description": "Calculate the distance between coordinates",
   "main": "lib/index.js",
@@ -10,7 +10,10 @@
     "Distance",
     "Typescript"
   ],
-  "author": "Tijs Martens",
+  "author":{
+    "name": "Rodi Digital",
+    "url": "https://rodi-digital.com"
+  },
   "files": [
     "lib/**/*"
   ],
